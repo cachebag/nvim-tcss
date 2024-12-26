@@ -1,0 +1,321 @@
+/* This is a
+random comment, ok? */
+
+# A regular comment
+ScalarTestingScope:hover {
+    /* this also works */ width: 12;
+    width: 5w;
+    width: 5vw; # Adding a comment here.
+    width: 18h /* comment */;
+    width: 3.4vw;  /* A multiline comment. */
+    width: /* comment */ 3.5vh;
+    width: .5fr;
+    width: 4634532452354; /* This should
+    also work... Why doesn't it?!
+
+    */
+
+    & > ScalarTestingScope2 {
+        width: 38w;
+        keyline: double;
+    }
+
+    &.classname {
+        layer: inside;
+    }
+}
+
+Widget {
+    overlay: screen;
+    background: initial;
+    constrain: x;
+    constrain: y;
+    constrain: both;
+    constrain: inflect;
+}
+
+Button,
+Screen,  # The screen is where everything goes
+App {}
+
+Screen > Horizontal:focus {}
+
+App, Screen, .gas354-2345et {}
+
+Widget.as-09 {}
+
+Widget.class {}
+
+Widget.one.t23wo {}
+
+Widget.one > .two > #three four.five {}
+
+/* Yet another random comment. */
+
+ScxrollbarSizeRule {
+    /* This works. */
+    scrollbar-size: 12 12;  /* A multiline comment here
+    should also work. */
+}
+
+Integers {
+    column-span: 3452;
+    /* A cool comment
+    explaining some cool things here. */
+    row-span: 32434;
+    margin-left: 12;
+    scrollbar-size-vertical: 0;
+}
+
+Opacity {
+    opacity: 0.12; # comment here
+    opacity: 15%;
+}
+
+Offset {
+    offset: 1fr 3fr;
+    offset: 1fr;
+    offset: 5% 18% 123vh;
+    offset: 5% 18%;
+}
+
+MultipleScalars {
+    grid-rows: 1fr;
+    grid-rows: 1fr 2fr;
+    grid-rows: 1fr 2fr 3fr;
+    grid-rows: 1fr     2fr                    3fr          ;
+    grid-rows: auto 3vh 5w 6vh auto 67%;
+    grid-columns: 1fr 2% 3vh 5fr 18fr 13vh;
+}
+
+Grid {
+    grid-size: $var;
+    grid-size: $var 1;
+    grid-size: 1 $two 3;
+    grid-gutter: 35 45h;
+    grid-gutter: 56%;
+    grid-gutter: 56% 35 45h;
+}
+
+Overflow {
+    overflow: auto hidden;
+    overflow: auto;
+    overflow-x: auto;
+    overflow-x: hidden;
+    overflow-x: scroll;
+    overflow-x: bananas;
+    overflow-y: auto;
+    overflow-y: hidden;
+    overflow-y: scroll;
+    overflow-y: peaches;
+}
+
+ManyIntegersForDirections {
+    margin: 1;
+    margin: 1 2;
+    margin: 1 2 3;
+    margin: 1 2 3 4;
+    margin: 1 2 3 4 5;
+    margin: 1 2 3 4 5 6;
+    margin: $var;
+    margin: 1 $var;
+    margin: $var 2;
+    margin: $var $var;
+    margin: 1 2 $var;
+    margin: 1 $var 3;
+    margin: 1 $var $var;
+    margin: $var 2 3;
+    margin: $var 2 $var;
+    margin: $var $var 3;
+    margin: $var $var $var;
+    margin: 1 2 3 $var;
+    margin: 1 2 $var 4;
+    margin: 1 2 $var $var;
+    margin: 1 $var 3 4;
+    margin: 1 $var 3 $var;
+    margin: 1 $var $var 4;
+    margin: 1 $var $var $var;
+    margin: $var 2 3 4;
+    margin: $var 2 3 $var;
+    margin: $var 2 $var 4;
+    margin: $var 2 $var $var;
+    margin: $var $var 3 4;
+    margin: $var $var 3 $var;
+    margin: $var $var $var 4;
+    margin: $var $var $var $var;
+}
+
+Visibility {
+    visibility: hidden;
+    visibility: visible;
+    visibility: dolphin;
+}
+
+LayersAndNames {
+    layers: bananas;
+    layers: _sad1234 _1234sadf hello wohooo;
+
+    layer: hello;
+    layer: hello world;
+}
+
+ColorTestingScope {
+    color: auto;
+    color: auto 50%;
+
+    color: red;
+    color: green;
+    color: pink 99%;
+    color: blue;
+
+    color: #222;
+    color: #DADA 12%;
+    color: #RADA 15%;
+    color: #12345;
+    color: #123456;
+    color: #AbCdEf;
+    color: #f2f2f8;
+    color: #f2f2f8f;
+    color: #f2f2f8ff 37%;
+
+    color: rgb(9332423, 23, 123);
+    color: rgb(23, 23, 123);
+    color: rgb(23, 23, 123) 25%;
+
+    color: rgba(12, 23, 34, 0);
+    color: rgba(12, 23, 34, .1);
+    color: rgba(12, 23, 34, 1);
+    color: rgba(12, 23, 34, 9);
+    color: rgba(12, 23, 34, 0.12332);
+    color: rgba(12, 23, 34, 0.12332) 75%;
+
+    color: hsl(450, 12%, 0%);
+    color: hsl(350, 12%, 0%);
+    color: hsl(350, 12%, 0%) 75%;
+    color: hsl(350, 12%, 0%) 12375%;
+    color: hsl(350, 12, 0%);
+    color: hsl(350, 120%, 0%);
+    color: hsl(350, 12%, 0%, 0.18);
+
+    color: hsla(450, 12%, 0%);
+    color: hsla(350, 12%, 0%, 0.1);
+    color: hsla(350, 12%, 0%, 23);
+    color: hsla(350, 12%, 0%, 0.23);
+    color: hsla(350, 12%, 0%, 23) 12%;
+    color: hsla(350, 12%, 0%, 0.23) 12%;
+
+    color: auto 15%;
+    color: green 48%;
+    color: #f8f8f2 123.3%;
+}
+
+TextStyleScope {
+    text-style: none;
+    text-style: underline;
+    text-style: none none;
+    text-style: underline italic;
+    text-style: bold $style underline $another_style italic;
+    text-style: none bold;
+    text-style: reverse none;
+    text-style: $none $none $none;
+    text-style: none $another_style;
+}
+
+BoxSizingScope {
+    box-sizing: content-box;
+    box-sizing: border-box;
+    box-sizing: asdf;
+}
+
+DisplayScope {
+    display: block;
+    display: none;
+    display: blone;
+}
+
+DockScope {
+    dock: left;
+    dock: right;
+    dock: bottom;
+    dock: top;
+    dock: everywhere;
+}
+
+LayoutScope {
+    layout: grid;
+    layout: horizontal;
+    layout: vertical;
+    layout: cenas;
+}
+
+AlignmentScope {
+    align: left;
+    align: middle;
+    align: left middleasd;
+    align: middle left;
+    align: bananas top;
+    align: left top;
+    align: left middle;
+    align: left bottom;
+    align: center top;
+    align: center middle;
+    align: center bottom;
+    align: right top;
+    align: right middle;
+    align: right bottom;
+    align: $alignment_value;
+    align-horizontal: left;
+    align-horizontal: center;
+    align-horizontal: right;
+    align-horizontal: $alignment;
+    align-vertical: top;
+    align-vertical: middle;
+    align-vertical: bottom;
+    border-subtitle-align: left;
+    border-subtitle-align: center;
+    border-subtitle-align: right;
+    border-title-align: left;
+    border-title-align: center;
+    border-title-align: right;
+    content-align: left top;
+    content-align: left middle;
+    content-align: left bottom;
+    content-align: center top;
+    content-align: center middle;
+    content-align: center bottom;
+    content-align: right top;
+    content-align: right middle;
+    content-align: right bottom;
+    content-align-horizontal: left;
+    content-align-horizontal: center;
+    content-align-horizontal: right;
+    content-align-vertical: top;
+    content-align-vertical: middle;
+    content-align-vertical: bottom !important;
+}
+
+BorderScope {
+    border: ascii blue !important;
+    border: round hsla(349, 15%, 85%, 0.5);
+    border: $cenas;
+}
+
+Screen {
+    background: #RADA;
+    text-style: italic;
+    text-style: bananas;
+    layers: bananas bonkers;
+}
+
+AnotherScope {
+    border: ascii;
+    border: blank !important;
+    border: some_fake_value;
+    border: double;
+    brder: ascii !important;
+}
+
+$var3: rgb(1, 2, 3);
+$var1: one two three names;
+$var2: 1 2 3 4;
+$var3: rgb(1, 2, 3);
