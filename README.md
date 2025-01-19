@@ -11,7 +11,7 @@ This plugin provides Tree-sitter-based syntax highlighting for `.tcss` files and
 ### Using packer.nvim
 ```lua
 use {
-    'your-username/tcss-nvim-plugin',
+    'cachebag/nvim-tcss',
     requires = { 'nvim-treesitter/nvim-treesitter' },
     config = function()
         require('tcss').setup()
