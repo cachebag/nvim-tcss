@@ -1,20 +1,43 @@
-# TCSS Syntax Highlighting for Neovim
+# nvim-tcss
 
-This plugin provides Tree-sitter-based syntax highlighting for `.tcss` files and embedded TCSS in Python.
+A Neovim plugin for Textual CSS (.tcss) syntax highlighting.
 
 ## Features
-- Syntax highlighting for `.tcss` files.
-- Highlighting of `CSS` and `DEFAULT_CSS` variables in Python.
+
+- 🎨 Full syntax highlighting for .tcss files
+- 🌈 Support for ANSI and web colors
+- 📐 Proper highlighting of Textual-specific properties
+- 💫 Variable highlighting
+- 🔧 Function support (rgb, rgba, hsl, hsla)
+- 🔍 Automatic file type detection
 
 ## Installation
 
-### Using packer.nvim
+Using [packer.nvim](https://github.com/wbthomason/packer.nvim):
+
 ```lua
 use {
     'cachebag/nvim-tcss',
-    requires = { 'nvim-treesitter/nvim-treesitter' },
     config = function()
         require('tcss').setup()
-    end,
+    end
 }
 
+Using lazy.nvim:
+```lua
+{
+    'cachebag/nvim-tcss',
+    config = true
+}
+
+require('tcss').setup({
+    -- Enable syntax highlighting (default: true)
+    enable = true,
+    
+    -- Custom color overrides
+    colors = {
+        -- Add custom highlighting rules here
+    }
+})
+
+``````

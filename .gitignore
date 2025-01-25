@@ -1,40 +1,16 @@
-# Rust artifacts
-target/
-
-# Node artifacts
-build/
-prebuilds/
-node_modules/
-
-# Swift artifacts
-.build/
-
-# Go artifacts
-_obj/
-
-# Python artifacts
-.venv/
-dist/
-*.egg-info
-*.whl
-
-# C artifacts
-*.a
-*.so
-*.so.*
-*.dylib
-*.dll
-*.pc
-
-# Example dirs
-/examples/*/
-
-# Grammar volatiles
-*.wasm
-*.obj
+# Lua
 *.o
+*.so
+*.lib
+*.dll
 
-# Archives
-*.tar.gz
-*.tgz
-*.zip
+# Neovim
+.netrwhist
+*~
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Test artifacts
+test/temp
