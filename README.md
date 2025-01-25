@@ -17,6 +17,7 @@ A Neovim plugin for Textual CSS (.tcss) syntax highlighting as seen on [transcen
 ```lua
 use {
     'cachebag/nvim-tcss',
+    build = "npm install",
     config = function()
         require('tcss').setup()
     end
@@ -27,13 +28,14 @@ use {
 ```lua
 {
     'cachebag/nvim-tcss',
+    build = "npm install",
     config = true
 }
 ```
 
 ### Using [vim-plug](https://github.com/junegunn/vim-plug)
 ```vim
-Plug 'cachebag/nvim-tcss'
+Plug 'cachebag/nvim-tcss', { 'do': 'npm install' }
 
 " After installation, in your init.vim/init.lua:
 lua require('tcss').setup()
