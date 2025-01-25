@@ -22,6 +22,7 @@ use {
         require('tcss').setup()
     end
 }
+```
 
 Using lazy.nvim:
 ```lua
@@ -39,5 +40,4 @@ require('tcss').setup({
         -- Add custom highlighting rules here
     }
 })
-
-``````
+```
