@@ -43,18 +43,19 @@ lua require('tcss').setup()
 
 ### Using [dein.vim](https://github.com/Shougo/dein.vim)
 ```vim
-call dein#add('cachebag/nvim-tcss')
+call dein#add('cachebag/nvim-tcss', {'build': 'npm install'})
 ```
 
 ### Using [minpac](https://github.com/k-takata/minpac)
 ```vim
-call minpac#add('cachebag/nvim-tcss')
+call minpac#add('cachebag/nvim-tcss', {'do': 'npm install'})
 ```
 
 ### Using [vim-pathogen](https://github.com/tpope/vim-pathogen)
 ```bash
 cd ~/.vim/bundle
 git clone https://github.com/cachebag/nvim-tcss.git
+cd ~/.vim/bundle/nvim-tcss && npm install
 ```
 
 ## Configuration
