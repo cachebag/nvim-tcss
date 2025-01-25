@@ -1,6 +1,6 @@
 # nvim-tcss
 
-A Neovim plugin for Textual CSS (.tcss) syntax highlighting.
+A Neovim plugin for Textual CSS (.tcss) syntax highlighting as seen on [transcendent-textual](https://github.com/Textualize/transcendent-textual).
 
 ## Features
 
