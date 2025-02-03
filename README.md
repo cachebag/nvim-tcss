@@ -7,7 +7,7 @@ A Neovim plugin for Textual CSS (.tcss) syntax highlighting as seen on [transcen
 
 
 ## Features
-- 🎨 Full syntax highlighting for .tcss files
+- 🎨 Full syntax highlighting support for .tcss files
 - 🌈 Support for ANSI and web colors
 - 📐 Proper highlighting of Textual-specific properties
 - 💫 Variable highlighting
